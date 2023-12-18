@@ -1,4 +1,4 @@
-while True:                   #Кутышев Кулаков
+while True:                   #Кутышев
     try:
         num1=float(input("1 число"))
         de=input("действие +, -, :, *")
