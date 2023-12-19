@@ -23,7 +23,7 @@ while True:            #Кулаков
                         write = input("введи пароль: ")
                         if write in fin.read():
                             print("пароль верный")
-                            print("успешный ыход в аккаунт")
+                            print("успешный вход в аккаунт")
                             break
                         else:
                             print("неверный пароль, попробуйте снова")
