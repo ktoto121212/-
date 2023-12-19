@@ -20,9 +20,13 @@ while True:            #Кулаков
             else:
                 if action == 2:                                   #вот тут добавь проверку пароля
                     with open(file_name, "a") as f:
-                        write = input("добавь это в файл: ")
-                        f.write(write)
-                        break                                      #вот тут конец
+                        write = input("введи пароль: ")
+                        if write in fin.read():
+                            print("пароль верный")
+                            print("успешный ыход в аккаунт")
+                            break
+                        else:
+                            print("неверный пароль, попробуйте снова")
                 elif action == 3:
                     with open(file_name, "w") as f:
                         write = input("введи новый пароль: ")
