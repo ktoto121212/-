@@ -1,6 +1,6 @@
 while True:            #Кулаков
     try:
-        action = int(input("действия на сайте: 1 - создать новый акк, 2 - зайти в акк, 3 - сменить пароль"))
+        action = int(input("действия на сайте: 1 - создать новый акк, 2 - зайти в акк, 3 - сменить пароль: "))
     except ValueError:
         print("такой команды нет")
     else:
@@ -20,7 +20,7 @@ while True:            #Кулаков
             else:
                 if action == 2:
                     with open(file_name, "r") as f:
-                        login = input("Введите логин: ")
+                        login = input("Введите пароль: ")
                         f.read()
                         if f.read == login:
                             print("пароль верный")
