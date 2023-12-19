@@ -1,4 +1,4 @@
-while True:
+while True:            #Магомедов
     try:
         action = int(input("что будедешь делать?: 1 - создам новый файл, 2 - отредактирую существующий, 3 - перезапишу его: "))
     except ValueError:
@@ -7,7 +7,7 @@ while True:
         if action == 1:
             file_name = input("как назовёшь файл?: ")
             with open(file_name, "x") as f:
-                write = input(": ")
+                write = input("вводи теперь текст в файл: ")
                 f.write(write)
                 break
         while True:
