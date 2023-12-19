@@ -19,7 +19,7 @@ while True:            #Кулаков
                 print("неверный логин")
             else:
                 if action == 2:
-                    with open("akk.txt", "r") as f:
+                    with open(file_name, "r") as f:
                         login = input("Введите логин: ")
                         f.read()
                         if f.read == login:
@@ -27,8 +27,7 @@ while True:            #Кулаков
                             print("успешный вход в аккаунт")
                             break
                         else:
-                            with open("akk.txt", "a") as f:
-                                print("неверный пароль")
+                            print("неверный пароль")
                 elif action == 3:
                     with open(file_name, "w") as f:
                         write = input("введи новый пароль: ")
